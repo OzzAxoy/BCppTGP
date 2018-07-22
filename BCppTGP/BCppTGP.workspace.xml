@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="BCppTGP" Database="" Version="10.0.0">
+  <Project Name="Chapter1" Path="Chapter1/Chapter1.project" Active="No"/>
+  <Project Name="Chapter2" Path="Chapter2/Chapter2.project" Active="No"/>
+  <Project Name="Chapter3" Path="Chapter3/Chapter3.project" Active="No"/>
+  <Project Name="Chapter4" Path="Chapter4/Chapter4.project" Active="No"/>
+  <Project Name="Chapter5" Path="Chapter5/Chapter5.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="Chapter1" ConfigName="Debug"/>
+      <Project Name="Chapter2" ConfigName="Debug"/>
+      <Project Name="Chapter3" ConfigName="Debug"/>
+      <Project Name="Chapter4" ConfigName="Debug"/>
+      <Project Name="Chapter5" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="Chapter1" ConfigName="Release"/>
+      <Project Name="Chapter2" ConfigName="Release"/>
+      <Project Name="Chapter3" ConfigName="Release"/>
+      <Project Name="Chapter4" ConfigName="Release"/>
+      <Project Name="Chapter5" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

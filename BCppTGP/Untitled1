@@ -1,0 +1,47 @@
+#include <iostream>
+
+using namespace std;    // or use std:: 
+
+int main() {
+    
+    string alphabet {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"};
+    string key      {"XZNLWEBGJHQDYVTKFUOMPCIASRxznlwebgjhqdyvtkfuompciasr"};
+    
+    string message;
+    string encrypted;
+    string decrypted;
+    
+    size_t position {0};
+    
+    cout << "\nEnter your secret message: ";
+    getline(cin, message);
+    cout << "\nEncrypting message...\n";
+        
+    for(size_t i{0}; i < message.size(); i++)
+    {
+        position = alphabet.find(message[i]); 
+        
+        if(position == string::npos)
+            encrypted += message[i];
+        else
+            encrypted += key[position];
+     }
+    
+    cout << "\nEnencrypted  message: " << encrypted << endl;
+    cout << "\nDecrypting message...\n";
+    
+    for(size_t i{0}; i < encrypted.size(); i++)
+    {
+        position = key.find(encrypted[i]); 
+       
+        if(position == string::npos)
+            decrypted += encrypted[i];
+        else
+            decrypted += alphabet[position];
+    }
+    
+    cout << "\nDecrypted message: " << decrypted << endl;
+    
+    cout << endl;
+    return 0;
+}
